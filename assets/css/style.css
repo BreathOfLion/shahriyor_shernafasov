@@ -108,6 +108,14 @@ section.container a:hover {
   text-decoration: underline;
 }
 
+section.container hr {
+  border: none;
+  height: 1px;
+  background: #e5e7eb;
+  margin: 40px 0;
+}
+
+
 /* Optional: images inside articles */
 section.container img {
   max-width: 100%;
