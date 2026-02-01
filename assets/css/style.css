@@ -93,3 +93,41 @@ footer {
   font-size: 0.9rem;
 }
 
+/* ===== Article list (articles.html) ===== */
+.article-list article {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-list article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.article-list article h3 {
+  margin-bottom: 8px;
+}
+
+.article-list article h3 a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.article-list article h3 a:hover {
+  text-decoration: underline;
+}
+
+.article-list article p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.article-list article small {
+  color: #6b7280;
+}
+
+
