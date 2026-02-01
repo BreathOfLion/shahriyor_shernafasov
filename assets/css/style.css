@@ -83,6 +83,37 @@ header {
 .section h2 {
   margin-bottom: 25px;
 }
+/* ===== Single article styling ===== */
+section.container p {
+  margin-bottom: 18px;
+}
+
+section.container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+section.container small {
+  color: #6b7280;
+  display: block;
+  margin-bottom: 20px;
+}
+
+section.container a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+section.container a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: images inside articles */
+section.container img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
 
 /* ===== Footer ===== */
 footer {
