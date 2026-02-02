@@ -199,5 +199,46 @@ footer {
   margin-top: 8px;
 }
 
+/* ===== About page ===== */
+.about-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1,
+.about-text h2 {
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Light background section */
+.light-bg {
+  background: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-block,
+  .about-block.reverse {
+    flex-direction: column;
+  }
+}
 
 
