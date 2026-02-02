@@ -169,4 +169,35 @@ footer {
   color: #6b7280;
 }
 
+/* ===== Ideas list styling ===== */
+.idea-list article {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.idea-list article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.idea-list article h3 a {
+  color: #16a34a; /* green accent for Ideas */
+  text-decoration: none;
+}
+
+.idea-list article h3 a:hover {
+  text-decoration: underline;
+}
+
+.idea-list article small {
+  color: #6b7280;
+  display: block;
+  margin-top: 8px;
+}
+
+
 
