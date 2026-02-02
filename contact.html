@@ -2,38 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="simple-header">
-    <h1>My Portfolio</h1>
-    <p>Projects, ideas, and things I’m building</p>
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out</p>
     <a href="index.html">← Back to Home</a>
   </header>
 
-  <main class="portfolio-grid">
+  <main class="contact-container">
 
-    <div class="portfolio-card">
-      <h3>Personal Website</h3>
-      <p>My personal website built using GitHub Pages.</p>
-      <a href="#">View</a>
-    </div>
+    <form class="contact-form" action="mailto:YOUR_EMAIL@example.com" method="post" enctype="text/plain">
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
 
-    <div class="portfolio-card">
-      <h3>Education Platform Idea</h3>
-      <p>Concept for a local online learning platform.</p>
-      <a href="#">Details</a>
-    </div>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
 
-    <div class="portfolio-card">
-      <h3>Future Project</h3>
-      <p>More projects coming soon.</p>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-alt">
+      <p>Or contact me directly:</p>
+      <p>📧 Email: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+      <p>💬 Telegram: <a href="https://t.me/YOUR_USERNAME" target="_blank">@YOUR_USERNAME</a></p>
     </div>
 
   </main>
 
 </body>
 </html>
-
