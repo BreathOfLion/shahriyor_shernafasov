@@ -1,1 +1,32 @@
+title: "Your Name"
+description: "Personal platform: ideas, portfolio, updates."
+url: ""
+baseurl: ""
+
+markdown: kramdown
+
+collections:
+  ideas:
+    output: true
+    permalink: /ideas/:title/
+  portfolio:
+    output: true
+    permalink: /portfolio/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      type: ideas
+    values:
+      layout: post
+  - scope:
+      type: portfolio
+    values:
+      layout: post
+
+include:
+  - admin
 
