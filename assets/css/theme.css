@@ -1,1 +1,11 @@
+---
+---
+:root{
+  --brand: {{ site.data.theme.brand }};
+  --accent: {{ site.data.theme.accent }};
+  --bg: {{ site.data.theme.bg }};
+  --text: {{ site.data.theme.text }};
+  --card: {{ site.data.theme.card }};
+  --muted: {{ site.data.theme.muted }};
+}
 
