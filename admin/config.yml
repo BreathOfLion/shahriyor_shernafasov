@@ -1,1 +1,44 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "ideas"
+    label: "Ideas"
+    folder: "_ideas"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "_portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "theme"
+    label: "Theme"
+    files:
+      - label: "Colors"
+        name: "colors"
+        file: "_data/theme.yml"
+        fields:
+          - { label: "Brand", name: "brand", widget: "string" }
+          - { label: "Accent", name: "accent", widget: "string" }
+          - { label: "Background", name: "bg", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Card", name: "card", widget: "string" }
+          - { label: "Muted", name: "muted", widget: "string" }
 
